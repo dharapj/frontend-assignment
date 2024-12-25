@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const row = document.createElement("tr");
         row.innerHTML = `
           <td>${i}</td>
-          <td>${data[i]["percentage.funded"]}%</td>
-          <td>$${data[i]["amt.pledged"]}</td>
+          <td>${data[i]["percentage.funded"]} % </td>
+          <td>$ ${data[i]["amt.pledged"]}</td>
         `;
         tbody.appendChild(row);
       }  
