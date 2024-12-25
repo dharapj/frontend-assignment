@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ecommerce-table-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+    display: block;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .no-data {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .styled-table thead {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+  }
+  
+  .styled-table tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1rem 0;
+  }
+  
+  .page-button {
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #007bff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .page-button.active {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .page-button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+  }
+  
+  .page-button:disabled {
+    background-color: #f1f1f1;
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .styled-table th,
+    .styled-table td {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .pagination {
+      gap: 5px;
+    }
+  
+    .page-button {
+      padding: 6px 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .styled-table th,
+    .styled-table td {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  
+    .page-button {
+      padding: 5px 8px;
+      font-size: 0.8rem;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
