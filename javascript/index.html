@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Style Paginated Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ecommerce-table-container">
+    <h1 id="page-title">Table Data</h1>
+    <div id="spinner" class="spinner" aria-live="assertive" role="alert"></div>
+    <div id="no-data" class="no-data" style="display: none;" role="alert">No data available</div>
+    <div class="table-wrapper" aria-live="polite" aria-atomic="true">
+      <table id="table" class="styled-table" style="display: none;" aria-describedby="page-title">
+        <thead>
+          <tr>
+            <th scope="col">S.No.</th>
+            <th scope="col">Percentage Funded</th>
+            <th scope="col">Amount Pledged</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div id="pagination"
+      class="pagination"
+      style="display: none;"
+      role="navigation"
+      aria-label="Pagination controls"
+    ></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
